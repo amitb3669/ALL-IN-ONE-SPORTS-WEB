@@ -100,6 +100,11 @@
         <br /> <!-- Line break to separate image and button -->
         <button class="custom-button" id="playVideo7">Sony Ten Sports 1 HD</button>
     </div>
+    <div class="box">
+        <img alt="Logo" height="100" src="https://i.ibb.co/yqZKHmf/Astro-Cricket.png" width="100" />
+        <br /> <!-- Line break to separate image and button -->
+        <button class="custom-button" id="playVideo8"><a href="https://5d664a9e-5f57-4b01-af66-13c015b10f13-00-7298eg4lwspy.sisko.replit.dev/" target="_blank">Astr0 Cricket</a></button>
+    </div>
 
     <script>
         var player;
@@ -190,6 +195,15 @@
                 "key": "1d4d52698080d453b032ca44277fd274"
             };
             setupPlayer("https://bpprod5linear.akamaized.net/bpk-tv/irdeto_com_Channel_256/output/manifest.mpd", drmConfig2);
+            player.play();
+        });
+        document.getElementById("playVideo7").addEventListener("click", function () {
+            // DRM (ClearKey) configuration for Video 2
+            var drmConfig2 = {
+                "keyId": "7d8cc6ee3c9a5a82a0071779fd51a9a5",
+                "key": "1d4d52698080d453b032ca442778d274"
+            };
+            setupPlayer("https://bpprod5linear.akamaized.net/bpk-tv/irdeto_com_Channel_556/output/manifest.mpd", drmConfig2);
             player.play();
         });
     </script>
